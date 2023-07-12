@@ -12,14 +12,20 @@ let chosenParams = [];
 // Here is the questionare to build the password for the user:
 
 // This will set the user's password length to a number of their choice, or return an error alert for them to try again.
+function lengthConfirm() {
 let passwordLength = prompt("How long would you like your password to be?" , "Please enter a number between 8 and 128");
 if (passwordLength <= 7 || passwordLength >= 129) {
   alert("Please enter a number between 8 and 128")
+  lengthConfirm();
 } else if (isNaN(passwordLength)) {
   alert("Please enter a valid number using numbers, just numbers. No letters, special characters, spaces, none of that. Numbers only. You can use 12, or even 55. You can choose something crazy like 104. Or something super cliche like 69. But it has to be a number. Between 8 and 128, I should have said that, it has to be between 8 and 128. You can do this, please try again.")
+  lengthConfirm();
 } else {
   alert("On to the next questions.")
+}
 };
+lengthConfirm();
+
 
 // This will let the user decide if they want to use numbers in their password.
 let numChoice = confirm("Do you want your password to contain numbers?")
@@ -71,7 +77,54 @@ if (upperChoice && numChoice && lowerChoice) {
 };
 
 // This will let the user decide if they want to use special characters in their password.
-// let charChoice =
+let charChoice = confirm("Do you want your password to contain special characters?")
+if (charChoice && upperChoice && numChoice && lowerChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will now contain numbers, lowercase letters, uppercase letters, and special characters.`)
+} else if (charChoice && upperChoice && numChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will now contain numbers, uppercase letters, and special characters.`)
+} else if (charChoice && upperChoice && lowerChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will now contain lowercase letters, uppercase letters, and special characters.`)
+} else if (charChoice && numChoice && lowerChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will now contain numbers, lowercase letters, and special characters.`)
+ } else if (charChoice && upperChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will contain uppercase letters and special characters.`)
+} else if (charChoice && lowerChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will contain lowercase letters and special characters.`)
+}  else if (charChoice && numChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will contain numbers and special characters.`)
+}  else if (charChoice) {
+  chosenParams = chosenParams.concat(chars);
+  console.log(chosenParams)
+  alert(`Your password will contain special characters.`)
+} else {
+  alert(`Your password will not contain uppercase letters.`)
+  console.log(chosenParams)
+};
+
+if (!numChoice && !lowerChoice && !upperChoice && !charChoice) {
+  alert(`Please choose at least one type of character.`)
+  generatePassword();
+} else {
+  alert(`Your password is generating now...`)
+  alert(`Generating.....`)
+  alert(`Generating.......`)
+};
+
+
 }
 
 
