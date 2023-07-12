@@ -46,8 +46,29 @@ if (numChoice && lowerChoice) {
   alert(`Your password will not contain lowercase letters.`)
   console.log(chosenParams)
 };
+
 // This will let the user decide if they want to use uppercase letters in their password.
-// let upperChoice =
+let upperChoice = confirm("Do you want your password to contain uppercase letters?")
+if (upperChoice && numChoice && lowerChoice) {
+  chosenParams = chosenParams.concat(upperAlphabet);
+  console.log(chosenParams)
+  alert(`Your password will now contain numbers, lowercase letters, and uppercase letters.`)
+} else if (upperChoice && numChoice) {
+  chosenParams = chosenParams.concat(upperAlphabet);
+  console.log(chosenParams)
+  alert(`Your password will now contain both numbers and uppercase letters.`)
+} else if (upperChoice && lowerChoice) {
+  chosenParams = chosenParams.concat(upperAlphabet);
+  console.log(chosenParams)
+  alert(`Your password will now contain both lowercase letters and uppercase letters.`)
+} else if (upperChoice) {
+  chosenParams = chosenParams.concat(upperAlphabet);
+  console.log(chosenParams)
+  alert(`Your password will contain uppercase letters.`)
+} else {
+  alert(`Your password will not contain uppercase letters.`)
+  console.log(chosenParams)
+};
 
 // This will let the user decide if they want to use special characters in their password.
 // let charChoice =
