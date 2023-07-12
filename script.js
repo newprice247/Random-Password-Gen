@@ -4,13 +4,26 @@ let numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-let chars = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~']
+let chars = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
 
-let randomA = alphabet[Math.floor(Math.random() * alphabet.length)];
+// let randomA = alphabet[Math.floor(Math.random() * alphabet.length)];
+// console.log(randomA);
+// let randomN = numbers[Math.floor(Math.random() * numbers.length)];
+// console.log(randomN);
+// let randomC = chars[Math.floor(Math.random() * chars.length)];
+// console.log(randomC);
 
-let randomN = numbers[Math.floor(Math.random() * numbers.length)];
+// let randomizer = [randomA, randomN, randomC]
 
-let randomC = chars[Math.floor(Math.random() * chars.length)];
+function passwordgen() {
+  for (i = 0; i < 8; i++) {
+    let randomA = alphabet[Math.floor(Math.random() * alphabet.length)];
+    let randomN = numbers[Math.floor(Math.random() * numbers.length)];
+    let randomC = chars[Math.floor(Math.random() * chars.length)];
+  }
+}
+
+passwordgen()
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
