@@ -19,7 +19,7 @@ function generatePassword() {
       alert("Please enter a number between 8 and 128")
       lengthConfirm(); //Will loop until user satisfies the necessary conditions.
     } else if (isNaN(passwordLength)) {
-      alert("Please enter a valid number using numbers, just numbers. No letters, special characters, spaces, none of that. Numbers only. You can use 12, or even 104. You can choose something crazy like 87. Or something super boring like 10. But it has to be a number. Between 8 and 128, I should have said that, it has to be a number between 8 and 128. You can do this, please try again. ;)")
+      alert(`Please enter a valid number as an integer between 8 and 128`)
       lengthConfirm(); //Will loop until user satisfies the necessary conditions.
     } else {
       alert(`Your password will be ${passwordLength} characters long, on to the next question!`)
@@ -109,8 +109,6 @@ function generatePassword() {
     generatePassword();
   } else { //Just adding a little bit of fun to the process :)
     alert(`Your password is generating now...`)
-    alert(`Generating....`)
-    alert(`Generating.......`)
   };
 
   // This will loop through all of the user's chosen parameters that have been saved in the empty chosenParams array, then pull random characters from it and add them to the empty string declared as userPassword, the final product.
