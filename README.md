@@ -20,11 +20,8 @@ The goal of this project was to build a random password generator using JavaScri
 
 [ Click Here to View Portfolio Website](https://newprice247.github.io/Random-Password-Gen/)
 
-<<<<<<< HEAD
-![Screenshot of Random Password Generator website](./assets/screenshot-rpg.png)
-=======
-[Screenshot of Random Password Generator website](./assets/03-javascript-homework-demo.pngportfolio.png)
->>>>>>> 5da93c2f27fe321dfc9f255c8a9267ba522d9c48
+![Screenshot of Random Password Generator website](./assets/03-javascript-homework-demo.pngportfolio.png)
+
 
 ## Contact Me
 
