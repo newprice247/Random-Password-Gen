@@ -38,6 +38,7 @@ function generatePassword() {
   } else {
     alert(`Your password will not contain numbers.`)
   };
+  console.log(`numChoice is ${numChoice}`)
 
   // This will let the user decide if they want to use lowercase letters in their password.
   let lowerChoice = confirm("Do you want your password to contain lowercase letters?")
@@ -50,6 +51,7 @@ function generatePassword() {
   } else {
     alert(`Your password will not contain lowercase letters.`)
   };
+  console.log(`lowerChoice is ${lowerChoice}`)
 
   // This will let the user decide if they want to use uppercase letters in their password.
   let upperChoice = confirm("Do you want your password to contain uppercase letters?")
@@ -68,6 +70,7 @@ function generatePassword() {
   } else {
     alert(`Your password will not contain uppercase letters.`)
   };
+  console.log(`upperChoice is ${upperChoice}`)
 
   // This will let the user decide if they want to use special characters in their password.
   let charChoice = confirm("Do you want your password to contain special characters?")
@@ -98,6 +101,7 @@ function generatePassword() {
   } else {
     alert(`Your password will not contain uppercase letters.`)
   };
+  console.log(`charChoice is ${charChoice}`)
 
   // This will throw an alert message if the user doesn't choose any characters for their password, then calls the generatePassword() function which will restart the questionare from the beginning.
   if (!numChoice && !lowerChoice && !upperChoice && !charChoice) {
@@ -115,6 +119,7 @@ function generatePassword() {
     let random = Math.floor(Math.random() * chosenParams.length) //For every loop another random number will be generated based on the number of items held in the chosenParams array.
     userPassword += chosenParams[random]; //For every loop, another random character from the chosenParams array will be added to the userPassword String.
   }
+  console.log(`userPassword is ${userPassword}`)
   return userPassword;
 }
 

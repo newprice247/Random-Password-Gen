@@ -4,7 +4,7 @@
 
 ## Description
 
-The goal of this project was to build a random password generator using JavaScript and the provided starter code. The application enables the user to generate a random password based on criteria that they have selected using the web app's built in questionare. Based on their choices, a random password of varying length, using a variety of different types of characteres, will be displayed dynamically on screen.
+The goal of this project was to build a random password generator using JavaScript and the provided starter code. The application enables the user to generate a random password based on criteria that they have selected using the web app's built in questionaire. Based on their choices, a random password of varying length, using a variety of different types of characteres, will be displayed dynamically on screen.
 
 ## Finished Project
 
@@ -20,11 +20,8 @@ The goal of this project was to build a random password generator using JavaScri
 
 [ Click Here to View Portfolio Website](https://newprice247.github.io/Random-Password-Gen/)
 
-<<<<<<< HEAD
+
 ![Screenshot of Random Password Generator website](./assets/screenshot-rpg.png)
-=======
-[Screenshot of Random Password Generator website](./assets/03-javascript-homework-demo.pngportfolio.png)
->>>>>>> 5da93c2f27fe321dfc9f255c8a9267ba522d9c48
 
 ## Contact Me
 
